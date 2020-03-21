@@ -51,7 +51,7 @@ const rp = require('request-promise-native');
        .then((body) => {
         console.log('Successfully sent ticket! Response: ' + body);
         agent.data.ticketID = body.id;
-        agent.add(`Alles klar! Für Rückfragen benutzen sie bitte die Ticket-ID ${agent.data.ticketID}. Wir wünschen einen schönen Tag!`)
+        agent.add(`Alles klar! Für Rückfragen zu Ihrer Position in der Warteschlange benutzen sie bitte die Ticket-ID ${agent.data.ticketID}. Wir wünschen einen schönen Tag!`)
         return;
        });
    }
